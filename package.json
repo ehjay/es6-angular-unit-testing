@@ -1,0 +1,38 @@
+{
+  "name": "es6-angular-unit-testing",
+  "version": "1.0.0",
+  "description": "example unit tests with angular and es6",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehjay/es6-angular-unit-testing"
+  },
+  "dependencies": {
+    "angular": "^1.5.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.6",
+    "babel-cli": "^6.0.0",
+    "eslint": "^2.11.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-ng-html2js-preprocessor": "^1.0.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "lint": "eslint src",
+    "test": "karma start --singleRun",
+    "pretest": "npm run lint"
+  },
+  "keywords": [
+    "angular",
+    "es6",
+    "testing",
+    "unit"
+  ],
+  "author": "Andrew Johnston",
+  "license": "MIT"
+}
