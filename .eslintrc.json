@@ -6,9 +6,16 @@
         "node": true
     },
     "extends": "eslint:recommended",
+    "globals": {
+      "angular": true,
+      "inject": true
+    },
     "parserOptions": {
         "sourceType": "module"
     },
+    "plugins": [
+      "angular"
+    ],
     "rules": {
         "indent": [
             "error",
